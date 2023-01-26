@@ -8,7 +8,8 @@
     "preview": "vite preview",
     "eslint": "eslint --ext .js,.vue --ignore-path .gitignore --fix src",
     "prettier": "prettier --write .",
-    "commit": "git add . && git-cz"
+    "commit": "git add . && git-cz",
+    "preinstall": "npx only-allow pnpm"
   },
   "dependencies": {
     "@vueuse/core": "^9.11.1",
