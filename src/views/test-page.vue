@@ -1,7 +1,12 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div>test</div>
+  <el-button type="primary">test11</el-button>
+  <div class="test">test</div>
 </template>
 
-<style scoped></style>
+<style lang="scss" scoped>
+.test {
+  background-color: $color-primary;
+}
+</style>

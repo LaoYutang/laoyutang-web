@@ -12,6 +12,7 @@ export default defineConfig({
       '@': path.resolve(__dirname, 'src'),
     },
   },
+
   plugins: [
     vue(),
     AutoImport({
@@ -21,10 +22,23 @@ export default defineConfig({
       resolvers: [ElementPlusResolver()],
     }),
     Components({
-      resolvers: [ElementPlusResolver()],
+      resolvers: [
+        ElementPlusResolver({
+          importStyle: 'sass',
+        }),
+      ],
       dts: 'src/components.d.ts',
     }),
   ],
+
+  css: {
+    preprocessorOptions: {
+      scss: {
+        additionalData: `@use "@/styles/index.scss" as *;`,
+      },
+    },
+  },
+
   server: {
     base: '/',
     port: 8000, // 启动端口
@@ -34,7 +48,6 @@ export default defineConfig({
       host: 'localhost',
       port: 8000,
     },
-
     proxy: {
       '/api': {
         target: 'http://localhost:9000',
