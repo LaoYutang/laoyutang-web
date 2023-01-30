@@ -54,6 +54,11 @@ export default defineConfig({
         changeOrigin: true,
         rewrite: (path: string) => path.replace(/^\/api/, ''),
       },
+      '/mock': {
+        target: 'http://127.0.0.1:4523/m1/2213668-0-default',
+        changeOrigin: true,
+        rewrite: (path: string) => path.replace(/^\/mock/, ''),
+      },
     },
   },
 })
