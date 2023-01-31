@@ -1,7 +1,16 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+const testRequest = () => {
+  request('/mock/test/ok', { a: 1, b: '1' }, 'delete/formdata')?.then((res) => {
+    console.log(res)
+  })
+  request('/mock/test/ok', {}, 'get')?.then((res) => {
+    console.log(res)
+  })
+}
+</script>
 
 <template>
-  <el-button type="primary">test11</el-button>
+  <el-button type="primary" @click="testRequest">test11</el-button>
   <div class="test">test</div>
 </template>
 

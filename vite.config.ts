@@ -20,6 +20,7 @@ export default defineConfig({
       dts: 'src/auto-import.d.ts',
       eslintrc: { enabled: true },
       resolvers: [ElementPlusResolver()],
+      dirs: ['./src/utils'],
     }),
     Components({
       resolvers: [

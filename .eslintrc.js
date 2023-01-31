@@ -42,6 +42,10 @@ module.exports = {
     'no-var': 'error', // 禁用var
     indent: 0, // 不处理缩进，交给prettier
 
+    /* ts部分 */
+    '@typescript-eslint/no-explicit-any': 'off', // 关闭any类型警告
+    '@typescript-eslint/no-inferrable-types': 'off', // 关闭自动推导不能指定警告
+
     /* vue部分 */
     'vue/array-bracket-spacing': 2, // 数组括号内保持间距，默认不加间距
     'vue/camelcase': 2, // 变量名必须使用驼峰
