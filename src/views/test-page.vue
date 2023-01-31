@@ -1,11 +1,6 @@
 <script setup lang="ts">
 const testRequest = () => {
-  request('/mock/test/ok', { a: 1, b: '1' }, 'delete/formdata')?.then((res) => {
-    console.log(res)
-  })
-  request('/mock/test/ok', {}, 'get')?.then((res) => {
-    console.log(res)
-  })
+  console.log(deepClone({ a: [{ b: 1, c: 44 }] }))
 }
 </script>
 
