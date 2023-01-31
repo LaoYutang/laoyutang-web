@@ -27,7 +27,14 @@ class Request {
     )
   }
 
-  // 请求方法
+  /**
+   * @description axios请求方法
+   * @param url 请求相对路径
+   * @param params 请求参数对象
+   * @param method 请求方法
+   * @param config 请求的额外配置
+   * @returns 请求的返回Promise
+   */
   request(
     url: string,
     params: any,
