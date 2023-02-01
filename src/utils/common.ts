@@ -82,3 +82,28 @@ export const debounce = (
     flag = true
   }
 }
+
+/**
+ * 节流函数
+ * @param fn 原函数
+ * @param delay 延迟间隔
+ * @param immediate 是否立即执行
+ * @returns 节流函数
+ */
+export const throttle = (
+  fn: Function,
+  delay: number = 500,
+  immediate: boolean = true,
+): Function => {
+  let flag: boolean = false
+  return function (this: any, ...rest: Array<any>) {
+    if (!flag) {
+      if (immediate) fn.apply(this, rest)
+      setTimeout(() => {
+        if (!immediate) fn.apply(this, rest)
+        flag = false
+      }, delay)
+      flag = true
+    }
+  }
+}

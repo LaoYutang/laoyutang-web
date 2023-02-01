@@ -1,7 +1,11 @@
 <script setup lang="ts">
-const testRequest = debounce((num: number, str: string): void => {
-  console.log(num, str)
-})
+const testRequest = throttle(
+  (num: number, str: string): void => {
+    console.log(num, str)
+  },
+  2000,
+  false,
+)
 </script>
 
 <template>

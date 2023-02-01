@@ -98,6 +98,7 @@
     "syncRef": true,
     "syncRefs": true,
     "templateRef": true,
+    "throttle": true,
     "throttledRef": true,
     "throttledWatch": true,
     "toRaw": true,
