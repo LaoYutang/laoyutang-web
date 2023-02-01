@@ -1,11 +1,11 @@
 <script setup lang="ts">
-const testRequest = () => {
-  console.log(deepClone({ a: [{ b: 1, c: 44 }] }))
-}
+const testRequest = debounce((num: number, str: string): void => {
+  console.log(num, str)
+})
 </script>
 
 <template>
-  <el-button type="primary" @click="testRequest">test11</el-button>
+  <el-button type="primary" @click="testRequest(1, 'a')">test11</el-button>
   <div class="test">test</div>
 </template>
 

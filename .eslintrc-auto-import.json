@@ -20,6 +20,7 @@
     "createSharedComposable": true,
     "createUnrefFn": true,
     "customRef": true,
+    "debounce": true,
     "debouncedRef": true,
     "debouncedWatch": true,
     "deepClone": true,

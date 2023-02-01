@@ -45,6 +45,15 @@ module.exports = {
     /* ts部分 */
     '@typescript-eslint/no-explicit-any': 'off', // 关闭any类型警告
     '@typescript-eslint/no-inferrable-types': 'off', // 关闭自动推导不能指定警告
+    '@typescript-eslint/ban-types': [
+      'error',
+      {
+        types: {
+          Function: false,
+        },
+        extendDefaults: true,
+      },
+    ],
 
     /* vue部分 */
     'vue/array-bracket-spacing': 2, // 数组括号内保持间距，默认不加间距
