@@ -19,7 +19,8 @@
       // 模块名到基于 baseUrl 的路径映射的列表
       "@": ["src"],
       "@/*": ["src/*"]
-    }
+    },
+    "types": ["vite/client"]
   },
   "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
   "references": [{ "path": "./tsconfig.node.json" }]
