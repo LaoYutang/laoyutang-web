@@ -20,7 +20,7 @@ module.exports = {
 
   rules: {
     /* js部分 */
-    'no-console': 1,
+    'no-console': ['warn', { allow: ['error'] }],
     'no-debugger': 1,
     'comma-dangle': 0, // 允许尾随逗号
     'no-caller': 2, // 禁止callee
