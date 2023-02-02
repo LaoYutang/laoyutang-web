@@ -3,7 +3,7 @@
  * @param variables 需要判断变量类型的变量
  * @returns 变量类型
  */
-export const getVarType = (variables: any): string => {
+export const _getVarType = (variables: any): string => {
   return Object.prototype.toString.call(variables).slice(8, -1)
 }
 
@@ -12,7 +12,7 @@ export const getVarType = (variables: any): string => {
  * @param variables 需要判断的变量
  * @returns 是否原始型
  */
-export const isPrimitVar = (variables: any): boolean => {
+export const _isPrimitVar = (variables: any): boolean => {
   return [
     'String',
     'Number',
@@ -21,7 +21,7 @@ export const isPrimitVar = (variables: any): boolean => {
     'Undefined',
     'Symbol',
     'Bigint',
-  ].includes(getVarType(variables))
+  ].includes(_getVarType(variables))
 }
 
 /**
@@ -31,7 +31,7 @@ export const isPrimitVar = (variables: any): boolean => {
  * @param immediate 是否立即执行
  * @returns 防抖函数
  */
-export const debounce = (
+export const _debounce = (
   fn: Function,
   delay: number = 500,
   immediate: boolean = true,
@@ -59,7 +59,7 @@ export const debounce = (
  * @param immediate 是否立即执行
  * @returns 节流函数
  */
-export const throttle = (
+export const _throttle = (
   fn: Function,
   delay: number = 500,
   immediate: boolean = true,

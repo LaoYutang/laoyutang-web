@@ -13,7 +13,7 @@ const test = {
 
 test.self = test
 const testRequest = () => {
-  console.log(test, deepClone(test))
+  console.log(test, _deepClone(test))
 }
 </script>
 

@@ -2,7 +2,7 @@
  * 栈构造类
  * @type T 栈中成员的类型
  */
-export class Stack<T> {
+export class _Stack<T> {
   #stack: Array<T>
   /**
    * 初始化一个栈

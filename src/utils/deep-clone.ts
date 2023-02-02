@@ -12,13 +12,13 @@ interface NodeType {
   sign: string
 }
 
-export const deepClone = (source: any) => {
+export const _deepClone = (source: any) => {
   // 如果传入原始型变量直接返回
-  if (isPrimitVar(source)) return source
+  if (_isPrimitVar(source)) return source
 
   let root: any
   // 创建栈进行深度遍历，防止直接递归造成爆栈
-  const stack = new Stack<NodeType>({
+  const stack = new _Stack<NodeType>({
     parent: root,
     key: undefined,
     data: source,
@@ -52,7 +52,7 @@ export const deepClone = (source: any) => {
   while (stack.length() > 0) {
     const { parent, key, data, sign } = <NodeType>stack.pop()
     // 原始型变量直接进入下个循环
-    if (isPrimitVar(data)) {
+    if (_isPrimitVar(data)) {
       assign(parent, key, data, sign)
       continue
     }
@@ -63,7 +63,7 @@ export const deepClone = (source: any) => {
     }
 
     // 判断类型，分类处理
-    const type = getVarType(data)
+    const type = _getVarType(data)
     switch (type) {
       case 'Date': {
         const res = new Date(data)

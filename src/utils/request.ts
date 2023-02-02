@@ -23,4 +23,4 @@ const axiosRequest = new Request(
   },
 )
 
-export const request = axiosRequest.request.bind(axiosRequest)
+export const _request = axiosRequest.request.bind(axiosRequest)
