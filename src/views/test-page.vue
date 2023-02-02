@@ -1,19 +1,6 @@
 <script setup lang="ts">
-const test = {
-  arr: [{ a: 1 }, { b: '2' }],
-  set: new Set([{ a: 1 }, { arr: [{ a: 1 }, { b: '2' }] }]),
-  map: new Map<any, any>([
-    [{}, {}],
-    ['a', 'a'],
-  ]),
-  set1: new Set([1, 2, 3, 4, 5, 6]),
-  arr1: ['1', '1', '2'],
-  self: {},
-}
-
-test.self = test
 const testRequest = () => {
-  console.log(test, _deepClone(test))
+  console.log(Promise.prototype.flat.call(1))
 }
 </script>
 
