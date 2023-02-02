@@ -1,15 +1,24 @@
 <script setup lang="ts">
-const testRequest = throttle(
-  (num: number, str: string): void => {
-    console.log(num, str)
-  },
-  2000,
-  false,
-)
+const test = {
+  arr: [{ a: 1 }, { b: '2' }],
+  set: new Set([{ a: 1 }, { arr: [{ a: 1 }, { b: '2' }] }]),
+  map: new Map<any, any>([
+    [{}, {}],
+    ['a', 'a'],
+  ]),
+  set1: new Set([1, 2, 3, 4, 5, 6]),
+  arr1: ['1', '1', '2'],
+  self: {},
+}
+
+test.self = test
+const testRequest = () => {
+  console.log(test, deepClone(test))
+}
 </script>
 
 <template>
-  <el-button type="primary" @click="testRequest(1, 'a')">test11</el-button>
+  <el-button type="primary" @click="testRequest()">test11</el-button>
   <div class="test">test</div>
 </template>
 

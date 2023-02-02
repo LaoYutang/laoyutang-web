@@ -8,51 +8,20 @@ export const getVarType = (variables: any): string => {
 }
 
 /**
- * 深拷贝方法
- * @param source 需要深拷贝的变量
- * @returns 深拷贝后的变量
+ * 判断是否为原始型变量
+ * @param variables 需要判断的变量
+ * @returns 是否原始型
  */
-export const deepClone = (source: any): any => {
-  const type = getVarType(source)
-
-  switch (type) {
-    // 数组
-    case 'Array': {
-      const target: Array<any> = []
-      for (const val of source) {
-        target.push(deepClone(val))
-      }
-      return target
-    }
-    // 集合
-    case 'Set': {
-      const target: Set<any> = new Set()
-      for (const val of source) {
-        target.add(deepClone(val))
-      }
-      return target
-    }
-    // 对象
-    case 'Object': {
-      const target: { [key: string]: any } = new Object()
-      for (const [key, val] of Object.entries(source)) {
-        target[key] = deepClone(val)
-      }
-      return target
-    }
-    // 字典
-    case 'Map': {
-      const target: Map<any, any> = new Map()
-      for (const [key, val] of source) {
-        target.set(key, deepClone(val))
-      }
-      return target
-    }
-    // 其他
-    default: {
-      return source
-    }
-  }
+export const isPrimitVar = (variables: any): boolean => {
+  return [
+    'String',
+    'Number',
+    'Boolean',
+    'Null',
+    'Undefined',
+    'Symbol',
+    'Bigint',
+  ].includes(getVarType(variables))
 }
 
 /**
