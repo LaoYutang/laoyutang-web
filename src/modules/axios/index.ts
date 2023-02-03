@@ -5,6 +5,7 @@ import type {
   RequestConfigType,
   RequestMapType,
   CustomConfigType,
+  RequestParamType,
 } from './index.d'
 
 class Request {
@@ -37,14 +38,15 @@ class Request {
    */
   request(
     url: string,
-    params: any,
+    params: RequestParamType,
     method: RequestMethodType,
     config?: RequestConfigType,
   ) {
     // 收到请求先判断请求是否正在进行或者仍然有效
     const requestKey = url + method + JSON.stringify(params)
     // 防抖，存在相同请求则返回同一个promise对象，结束方法
-    if (this.requestMap.has(requestKey)) return this.requestMap.get(requestKey)
+    if (this.requestMap.has(requestKey))
+      return this.requestMap.get(requestKey) as Promise<any>
 
     // methos支持json方式或者formdata
     // 格式 'post/formdata'为formdata 否则为json
@@ -53,6 +55,11 @@ class Request {
       format === 'formdata'
         ? 'application/x-www-form-urlencoded'
         : 'application/json'
+
+    // 对字符串进行trim处理
+    if (config?.trimString) {
+      this.#recursiveTrim(params)
+    }
 
     // 请求参数
     const requestConfig: AxiosRequestConfig = {
@@ -79,6 +86,29 @@ class Request {
     })
 
     return requestPromise
+  }
+
+  /**
+   * 递归去空方法，只处理常规Object和Array中的字符串
+   * @param source 需要做字符串去空的请求参数
+   */
+  #recursiveTrim(source: any): void {
+    for (const i in source) {
+      if (source.hasOwnProperty(i)) {
+        const type = _getVarType(source[i])
+        switch (type) {
+          case 'String': {
+            source[i] = source[i].trim()
+            break
+          }
+          case 'Object':
+          case 'Array': {
+            this.#recursiveTrim(source[i])
+            break
+          }
+        }
+      }
+    }
   }
 }
 

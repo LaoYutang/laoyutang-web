@@ -1,6 +1,7 @@
 {
   "globals": {
     "EffectScope": true,
+    "ElMessage": true,
     "_Stack": true,
     "_debounce": true,
     "_deepClone": true,

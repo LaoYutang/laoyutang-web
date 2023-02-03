@@ -2,6 +2,7 @@
 export {}
 declare global {
   const EffectScope: typeof import('vue')['EffectScope']
+  const ElMessage: typeof import('element-plus/es')['ElMessage']
   const _Stack: typeof import('./utils/stack')['_Stack']
   const _debounce: typeof import('./utils/common')['_debounce']
   const _deepClone: typeof import('./utils/deep-clone')['_deepClone']

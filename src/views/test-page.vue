@@ -1,6 +1,13 @@
 <script setup lang="ts">
-const testRequest = () => {
-  console.log(Promise.prototype.flat.call(1))
+const testRequest = async () => {
+  const [err, { data }] = await _request(
+    '/mock/test/ok',
+    { a: ' t ', b: [' q', 'q '] },
+    'post',
+    { trimString: true },
+  ).flat()
+  if (err) return
+  console.log(data)
 }
 </script>
 
