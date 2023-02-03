@@ -159,6 +159,7 @@ module.exports = {
     'vue/valid-v-once': 2, // v-once
     'vue/valid-v-pre': 2, // v-pre
     'vue/valid-v-show': 2, // v-show
+    'vue/multi-word-component-names': 'off',
 
     'vue/no-parsing-error': [
       // 语法检查
