@@ -1,0 +1,79 @@
+<svg height="215" version="1.1" width="215" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet"
+  viewBox="190 72 220 220" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g id="root" contentwidth="215" contentheight="292.2">
+    <g class="content" id="content" transform="matrix(1,0,0,1,-0.5,6.9)">
+      <g class="icon">
+        <svg height="215" version="1.1" width="215" xmlns="http://www.w3.org/2000/svg" x="193" y="68"
+          preserveAspectRatio="none" transform="matrix(1,0,0,1,0,0)">
+          <defs /><svg xmlns="http://www.w3.org/2000/svg" viewBox="193 68 215 215">
+            <defs>
+              <linearGradient x1="50%" y1="0%" x2="50%" y2="80%" id="prefix-Ixc-linearGradient-1">
+                <stop stop-color="#437AFB" offset="0%" />
+                <stop stop-color="#4EC1FD" offset="100%" />
+              </linearGradient>
+              <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="prefix-Ixc-linearGradient-2">
+                <stop stop-color="#54BEF9" offset="0%" />
+                <stop stop-color="#5595EE" offset="100%" />
+              </linearGradient>
+              <linearGradient x1="90%" y1="22%" x2="26%" y2="83%" id="prefix-Ixc-linearGradient-3">
+                <stop stop-color="#6E94FF" offset="0%" />
+                <stop stop-color="#2457FF" offset="68%" />
+                <stop stop-color="#2C59F4" offset="100%" />
+              </linearGradient>
+            </defs>
+            <path
+              d="M300.5 68C359.87 68 408 116.13 408 175.5S359.87 283 300.5 283 193 234.87 193 175.5 241.13 68 300.5 68Zm25.576 28.773c-42.597 0-77.128 30.595-77.128 68.337 0 37.74 34.531 68.336 77.128 68.336s77.128-30.595 77.128-68.336c0-37.742-34.531-68.337-77.128-68.337Z"
+              id="prefix-Ixc-形状结合" fill="url(#prefix-Ixc-linearGradient-1)" />
+          </svg>
+        </svg>
+        <svg height="215" version="1.1" width="169" xmlns="http://www.w3.org/2000/svg" x="239" y="68"
+          preserveAspectRatio="none" transform="matrix(1,0,0,1,0,0)">
+          <defs />
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="239 68 169 215">
+            <defs>
+              <linearGradient x1="50%" y1="0%" x2="50%" y2="80%" id="prefix-pc9-linearGradient-1">
+                <stop stop-color="#437AFB" offset="0%" />
+                <stop stop-color="#4EC1FD" offset="100%" />
+              </linearGradient>
+              <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="prefix-pc9-linearGradient-2">
+                <stop stop-color="#54BEF9" offset="0%" />
+                <stop stop-color="#5595EE" offset="100%" />
+              </linearGradient>
+              <linearGradient x1="90%" y1="22%" x2="26%" y2="83%" id="prefix-pc9-linearGradient-3">
+                <stop stop-color="#6E94FF" offset="0%" />
+                <stop stop-color="#2457FF" offset="68%" />
+                <stop stop-color="#2C59F4" offset="100%" />
+              </linearGradient>
+            </defs>
+            <path
+              d="M300.5 68C359.87 68 408 116.13 408 175.5S359.87 283 300.5 283c-16.48 0-32.095-3.709-46.055-10.337a96.96 96.96 0 0 0 17.282 1.545c53.19 0 96.31-43.12 96.31-96.31 0-53.191-43.12-96.31-96.31-96.31-11.459 0-22.45 2-32.644 5.672C256.493 75.12 277.665 68 300.5 68Z"
+              id="prefix-pc9-形状结合" fill="url(#prefix-pc9-linearGradient-2)" />
+          </svg>
+        </svg>
+        <svg height="147" version="1.1" width="164" xmlns="http://www.w3.org/2000/svg" x="193" y="128"
+          preserveAspectRatio="none" transform="matrix(1,0,0,1,0,0)">
+          <defs /><svg xmlns="http://www.w3.org/2000/svg" viewBox="193 128 164 147">
+            <defs>
+              <linearGradient x1="50%" y1="0%" x2="50%" y2="80%" id="prefix-iOx-linearGradient-1">
+                <stop stop-color="#437AFB" offset="0%" />
+                <stop stop-color="#4EC1FD" offset="100%" />
+              </linearGradient>
+              <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="prefix-iOx-linearGradient-2">
+                <stop stop-color="#54BEF9" offset="0%" />
+                <stop stop-color="#5595EE" offset="100%" />
+              </linearGradient>
+              <linearGradient x1="90%" y1="22%" x2="26%" y2="83%" id="prefix-iOx-linearGradient-3">
+                <stop stop-color="#6E94FF" offset="0%" />
+                <stop stop-color="#2457FF" offset="68%" />
+                <stop stop-color="#2C59F4" offset="100%" />
+              </linearGradient>
+            </defs>
+            <path
+              d="M305.105 133.764c2.2 1.072 12 6.943 22.497 18.882 1.012 1.15 6.185-.739 13.402-.208 1.468.107 3.799 1.244 6.99 3.41-.733 5.28-.94 9.262-.621 11.947.319 2.684 1.195 5.853 2.63 9.508-.671.937-1.2 1.431-1.586 1.481-2.421.315-3.949-.672-3.847-.469 7.968 15.922 12.404 35.93 12.404 38.815 0 .24.01.484.02.738l.007.192.004.097.008.198c.007.2.013.407.014.622v.22c-.031 2.776-.94 7.068-8.61 17.033-.25.324-3.538 5.192-9.153 10.327l-.045.046c-17.378 17.074-41.205 27.605-67.492 27.605-5.9 0-11.675-.53-17.282-1.545C218.121 255.418 193 218.393 193 175.5c0-7.216.71-14.265 2.067-21.083 4.273 45.917 37.424 83.452 81.113 94.267 17.13 3.583 29.865 3.975 38.207 1.174 14.504-4.87 22.598-15.967 22.898-26.498.23-8.082-3.29-16.297-4.886-19.23-2.713-4.987-7.964-10.222-12.945-14.732.62 2.262.853 3.625.7 4.088-.242.731-1.72 1.495-2.65 1.15-3.905-1.446-7.264-4.68-9.516-5.175-4.182-.918-10.502.633-11.81-1.238-1.309-1.87-2.209-5.229-1.615-10.01.273-2.205 1.116-4.723 2.526-7.556-.215-.169-.436-.34-.662-.516-10.18-7.892-14.805-15.414-17.022-22.654-2.217-7.24-2.293-13.717 4.464-18.361 6.757-4.644 17.98 3.05 21.236 4.638Zm-9.41 6.552a2 2 0 1 0 0 4 2 2 0 0 0 0-4Z"
+              id="prefix-iOx-形状结合" fill="url(#prefix-iOx-linearGradient-3)" />
+          </svg>
+        </svg>
+      </g>
+    </g>
+  </g>
+</svg>

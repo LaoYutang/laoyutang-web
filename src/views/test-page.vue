@@ -14,6 +14,8 @@ const testRequest = async () => {
 <template>
   <el-button type="primary" @click="testRequest()">test11</el-button>
   <div class="test">test</div>
+
+  <SvgIcon name="logo-text" :width-scale="4" style="font-size: 100px" />
 </template>
 
 <style lang="scss" scoped>
