@@ -15,7 +15,11 @@ const testRequest = async () => {
   <el-button type="primary" @click="testRequest()">test11</el-button>
   <div class="test">test</div>
 
-  <SvgIcon name="logo-text" :width-scale="4" style="font-size: 100px" />
+  <SvgIcon
+    name="logo-text"
+    :width-scale="4"
+    style="font-size: 100px; color: red"
+  />
 </template>
 
 <style lang="scss" scoped>
