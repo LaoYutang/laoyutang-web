@@ -1,18 +1,16 @@
 <script setup lang="ts">
-const testRequest = async () => {
-  const [err, { data }] = await _request(
-    '/mock/test/ok',
-    { a: ' t ', b: [' q', 'q '] },
-    'post',
-    { trimString: true },
-  ).flat()
-  if (err) return
-  console.log(data)
-}
+console.log(
+  _structTree([
+    { id: 1, parentId: 10, reset: 'df' },
+    { id: 10, parentId: 2 },
+    { id: 2, parentId: null, reset: 'df' },
+    { id: 3, parentId: 2 },
+  ]),
+)
 </script>
 
 <template>
-  <el-button type="primary" @click="testRequest()">test11</el-button>
+  <el-button type="primary">test11</el-button>
   <div class="test">test</div>
 
   <SvgIcon

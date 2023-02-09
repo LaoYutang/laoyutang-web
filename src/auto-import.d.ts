@@ -2,13 +2,13 @@
 export {}
 declare global {
   const EffectScope: typeof import('vue')['EffectScope']
-  const ElMessage: typeof import('element-plus/es')['ElMessage']
   const _Stack: typeof import('./utils/stack')['_Stack']
   const _debounce: typeof import('./utils/common')['_debounce']
   const _deepClone: typeof import('./utils/deep-clone')['_deepClone']
   const _getVarType: typeof import('./utils/common')['_getVarType']
   const _isPrimitVar: typeof import('./utils/common')['_isPrimitVar']
   const _request: typeof import('./utils/request')['_request']
+  const _structTree: typeof import('./utils/struct-tree')['_structTree']
   const _throttle: typeof import('./utils/common')['_throttle']
   const acceptHMRUpdate: typeof import('pinia')['acceptHMRUpdate']
   const asyncComputed: typeof import('@vueuse/core')['asyncComputed']

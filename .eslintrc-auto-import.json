@@ -1,13 +1,13 @@
 {
   "globals": {
     "EffectScope": true,
-    "ElMessage": true,
     "_Stack": true,
     "_debounce": true,
     "_deepClone": true,
     "_getVarType": true,
     "_isPrimitVar": true,
     "_request": true,
+    "_structTree": true,
     "_throttle": true,
     "acceptHMRUpdate": true,
     "asyncComputed": true,
