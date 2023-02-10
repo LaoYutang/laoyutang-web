@@ -1,17 +1,22 @@
-const DEEPCLONE: { [key: string]: string } = {
-  SET: '__DeepClone_Set',
-  MAP: '__DeepClone_Map',
-  SELF: '__DeepClone_Self',
-  OTHER: '__DeepClone_OTHER',
+const enum DEEPCLONE {
+  SET,
+  MAP,
+  SELF,
+  OTHER,
 }
 
 interface NodeType {
   parent: any
   key: any
   data: any
-  sign: string
+  sign: DEEPCLONE
 }
 
+/**
+ * 深拷贝函数
+ * @param source 需要深拷贝的对象
+ * @returns 复制的对象
+ */
 export const _deepClone = (source: any) => {
   // 如果传入原始型变量直接返回
   if (_isPrimitVar(source)) return source
@@ -28,7 +33,7 @@ export const _deepClone = (source: any) => {
   const cacheMap = new Map()
 
   // 定义赋值方法
-  const assign = (parent: any, key: any, res: any, sign: string) => {
+  const assign = (parent: any, key: any, res: any, sign: DEEPCLONE) => {
     switch (sign) {
       case DEEPCLONE.SELF: {
         root = res
